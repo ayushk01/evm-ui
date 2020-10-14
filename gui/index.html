@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3FA EVM</title>
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- EEL To Integrate Python with Frontend -->
+    <script type="javascript" src="/eel.js"></script>
+  </head>
+  <body>
+    <div
+      class="page-content"
+      style="background-image: url('images/wizard-v10-bg.jpg');"
+    >
+      <div class="wizard-v10-content">
+        <div class="wizard-form">
+          <!-- <div class="wizard-header">
+            <h3>WELCOME</h3>
+          </div> -->
+          <form class="form-register" action="#" method="post">
+            <div id="form-total">
+              <!-- SECTION 1 -->
+              <h2>1</h2>
+              <section>
+                <div class="inner">
+                  <center>
+                    <h3 id="status_text">Initializing...</h3>
+                    <img src="./images/rfid.png" alt="RFID" width="60%" />
+                  </center>
+                </div>
+              </section>
+              <!-- SECTION 2 -->
+              <h2>2</h2>
+              <section>
+                <div class="inner">
+                  <div class="form-row">
+                    <label for="pin">Enter Your PIN</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pin"
+                      name="pin"
+                    />
+                  </div>
+                </div>
+              </section>
+              <!-- SECTION 3 -->
+              <h2>3</h2>
+              <section>
+                <div class="inner">
+                  <center>
+                    <h3>Please Verify Your Fingerprint</h3>
+                    <img
+                      src="./images/fingerprint.gif"
+                      alt="fingerprint"
+                      width="40%"
+                    />
+                  </center>
+                </div>
+              </section>
+              <!-- SECTION 4 -->
+              <h2>4</h2>
+              <section>
+                <div class="vote">
+                  <center>
+                    <h3>Choose Your Candidate Now</h3>
+                    <div class="choices">
+                      <div class="choice">
+                        <input
+                          type="radio"
+                          id="Bob"
+                          name="gender"
+                          value="Bob"
+                        />
+                        <label for="Bob">Bob</label>
+                      </div>
+                      <div class="choice">
+                        <input
+                          type="radio"
+                          id="Jim"
+                          name="gender"
+                          value="Jim"
+                        />
+                        <label for="Jim">Jim</label>
+                      </div>
+                      <div class="choice">
+                        <input
+                          type="radio"
+                          id="Steve"
+                          name="gender"
+                          value="Steve"
+                        />
+                        <label for="Steve">Steve</label>
+                      </div>
+                      <div class="choice">
+                        <input
+                          type="radio"
+                          id="Tom"
+                          name="gender"
+                          value="Tom"
+                        />
+                        <label for="Tom">Tom</label>
+                      </div>
+                    </div>
+                  </center>
+                </div>
+              </section>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.steps.js"></script>
+    <script src="js/main.js"></script>
+    <script src="frontscript.js"></script>
+    <script>
+      init();
+    </script>
+  </body>
+</html>
